@@ -15,6 +15,14 @@ A single-file, zero-dependency landing page built for Hong Kong CPA firm proprie
 
 ---
 
+## Live Page
+
+🌐 **[https://ambrosecheng-bot.github.io/CPA](https://ambrosecheng-bot.github.io/CPA)**
+
+> Hosted on GitHub Pages. The landing page is a single self-contained HTML file — no build step, no backend, no database.
+
+---
+
 ## Target Audience
 
 | Attribute | Detail |
