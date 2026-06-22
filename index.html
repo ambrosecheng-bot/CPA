@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The CPA Firm Growth Offer · Aero Eagle Limited</title>
+<title>The CPA Firm Growth Offer · Ambrose Cheng</title>
 <style>
 /* ═══════════════════════════════════════════════════════
    MOBILE-FIRST CSS  — base = 320px+  →  desktop at 768px+
@@ -601,6 +601,42 @@ footer a{color:var(--gold);text-decoration:none}
 }
 
 /* ── Accessibility ── */
+
+/* ── CREDENTIAL SECTION ──────────────────────────────── */
+.credential-section{background:var(--greyLt);padding:var(--space-lg) var(--space-sm);border-top:1px solid #e2e8f0}
+.credential-card{
+  background:var(--white);border-radius:14px;
+  padding:28px 24px;
+  box-shadow:0 2px 16px rgba(30,39,97,.08);
+  border-left:5px solid var(--gold);
+  max-width:680px;margin:0 auto;
+}
+.credential-card__eyebrow{
+  font-size:11px;font-weight:bold;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:16px;
+}
+.credential-card__name{
+  font-family:Cambria,serif;font-size:clamp(22px,4vw,30px);
+  color:var(--navy);margin-bottom:8px;line-height:1.15;
+}
+.credential-card__quals{
+  font-size:13px;color:var(--grey);margin-bottom:18px;
+  letter-spacing:.02em;
+}
+.credential-card__quals strong{color:var(--navy)}
+.credential-card__quote{
+  font-family:Cambria,serif;font-size:clamp(15px,2.5vw,18px);
+  color:var(--navy);line-height:1.6;
+  border-top:1px solid #e2e8f0;
+  padding-top:18px;margin-top:4px;
+  font-style:italic;
+}
+.credential-card__quote em{color:var(--teal);font-style:normal;font-weight:bold}
+
+@media(min-width:768px){
+  .credential-card{padding:36px 40px}
+  .credential-card__quote{font-size:18px}
+}
 @media(prefers-reduced-motion:reduce){
   .btn-primary:hover,.btn-cta:hover{transform:none}
   html{scroll-behavior:auto}
@@ -614,7 +650,7 @@ footer a{color:var(--gold);text-decoration:none}
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="navbar__brand">Aero Eagle Limited</div>
+  <div class="navbar__brand">Ambrose Cheng</div>
   <a href="#book" class="navbar__cta">📅 Book Free 20-Min Call</a>
 </nav>
 
@@ -967,6 +1003,28 @@ footer a{color:var(--gold);text-decoration:none}
   </div>
 </section>
 
+<!-- S11b: CREDENTIAL — ABOUT YOUR ADVISOR -->
+<section class="credential-section">
+  <div class="container">
+    <div class="credential-card">
+      <div class="credential-card__eyebrow">About Your Advisor</div>
+      <h2 class="credential-card__name">Ambrose Cheng</h2>
+      <p class="credential-card__quals">
+        <strong>Former CPA &middot; 30+ years in practice &middot; KPMG-trained</strong>
+        &nbsp;&middot;&nbsp; ACCA qualified &nbsp;&middot;&nbsp; HKICPA qualified
+        &nbsp;&middot;&nbsp; Currently co-managing a Hong Kong CPA practice serving 150 SME clients
+      </p>
+      <p class="credential-card__quote">
+        &ldquo;I spent 30 years watching CPA firms lose their best people and their best clients
+        to problems that are <em>now entirely solvable</em>.
+        I did not build this system as an outsider selling technology.
+        I built it as someone who spent three decades doing the same work you are doing &mdash;
+        and who knows exactly which parts of it should never have required a human being.&rdquo;
+      </p>
+    </div>
+  </div>
+</section>
+
 <!-- S12: CTA -->
 <section class="cta-section" id="book">
   <div class="container">
@@ -975,7 +1033,7 @@ footer a{color:var(--gold);text-decoration:none}
     <p class="cta-sub">We map your current workflow, quantify your exact hidden cost, and show you what recovery looks like — in 20 minutes.</p>
     <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
       <a href="https://calendly.com/ambrose-cheng-cpa/free-20-minute-discovery-call" class="btn-cta" target="_blank" rel="noopener">📅 &nbsp;Book Your Free 20-Minute Discovery Call</a>
-      <span class="cta-link">calendly.com/aero-eagle/discovery</span>
+      <span class="cta-link">calendly.com/ambrose-cheng-cpa/free-20-minute-discovery-call</span>
     </div>
     <div class="cta-guarantees">
       <span class="cta-guarantee-item">🔒 90-Day Full Refund Guarantee</span>
@@ -1103,7 +1161,7 @@ footer a{color:var(--gold);text-decoration:none}
         </div>
         <h4>Three Steps to Get Started</h4>
         <ol>
-          <li style="margin-bottom:8px"><strong>Book a 20-Min Discovery Call</strong> — <a href="https://calendly.com/ambrose-cheng-cpa/free-20-minute-discovery-call" target="_blank" rel="noopener" style="color:var(--teal)">calendly.com/aero-eagle/discovery</a> — no pitch, just your numbers.</li>
+          <li style="margin-bottom:8px"><strong>Book a 20-Min Discovery Call</strong> — <a href="https://calendly.com/ambrose-cheng-cpa/free-20-minute-discovery-call" target="_blank" rel="noopener" style="color:var(--teal)">calendly.com/ambrose-cheng-cpa/free-20-minute-discovery-call</a> — no pitch, just your numbers.</li>
           <li style="margin-bottom:8px"><strong>Receive Your Custom Proposal</strong> — firm-specific ROI projection within 48 hours.</li>
           <li><strong>We Build Everything</strong> — full system live in 10 business days. You review and approve.</li>
         </ol>
@@ -1113,7 +1171,7 @@ footer a{color:var(--gold);text-decoration:none}
 </section>
 
 <footer>
-  <p>© 2026 Aero Eagle Limited &nbsp;·&nbsp; <a href="mailto:hello@aero-eagle.com">hello@aero-eagle.com</a> &nbsp;·&nbsp; Southampton, UK &amp; Hong Kong</p>
+  <p>© 2026 Ambrose Cheng &nbsp;·&nbsp; <a href="mailto:hello@aero-eagle.com">hello@aero-eagle.com</a> &nbsp;·&nbsp; Southampton, UK &amp; Hong Kong</p>
   <p style="margin-top:6px;font-style:italic">"Whatever your hand finds to do, do it with all your might." — Ecclesiastes 9:10</p>
 </footer>
 
