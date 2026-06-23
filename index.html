@@ -106,6 +106,11 @@ a{color:inherit}
   font-style:italic;margin-top:10px;display:block;
   text-shadow:0 1px 4px rgba(0,0,0,.4);
 }
+.hook-no-pitch--emphasis{
+  color:rgba(255,255,255,.88);font-style:normal;
+  font-weight:bold;font-size:13px;
+  letter-spacing:.01em;margin-top:12px;
+}
 .hook-pills{
   display:flex;flex-direction:column;
   align-items:center;gap:8px;margin-top:32px;
@@ -143,6 +148,25 @@ a{color:inherit}
 .qualify-footer{
   text-align:center;font-size:14px;color:var(--goldLt);
   font-style:italic;
+}
+.qualify-scene{
+  background:var(--navyMd);
+  border-left:4px solid var(--gold);
+  border-radius:8px;
+  padding:20px 22px;
+  margin-bottom:28px;
+}
+.qualify-scene__label{
+  font-size:10px;font-weight:bold;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:10px;
+}
+.qualify-scene__text{
+  font-family:Cambria,'Times New Roman',serif;
+  font-size:16px;line-height:1.7;color:var(--ice);
+  font-style:italic;
+}
+.qualify-scene__text em{
+  color:var(--goldLt);font-style:normal;font-weight:bold;
 }
 
 /* ─────────────────────────────────────────────────────────
@@ -654,17 +678,31 @@ footer a{color:var(--gold);text-decoration:none}
   <a href="#book" class="navbar__cta">📅 Book Free 20-Min Call</a>
 </nav>
 
-<!-- S1: HOOK HEADLINE -->
+<!-- S1: HOOK HEADLINE — Version A (Revised) -->
 <section class="hook-section">
   <div class="container">
-    <h1 class="hook-section__headline">Your best staff member<br>is going to resign.<br><em>Here is how to make sure<br>it does not matter.</em></h1>
-    <p class="hook-section__sub">A done-for-you AI workflow that recovers revenue, frees your team &amp; scales without more staff — built exclusively for Hong Kong CPA firm proprietors.</p>
-    <a href="#book" class="btn-primary">📅 Book Your Free 20-Minute Discovery Call</a>
-    <span class="hook-no-pitch">No pitch. No obligation. Just your numbers.</span>
+    <h1 class="hook-section__headline">
+      When your best staff member resigns,<br>
+      <em>your firm should not even notice.</em>
+    </h1>
+    <p class="hook-section__sub">
+      A done-for-you AI workflow that carries every client, every deadline,
+      and every filing — so the knowledge lives in your system, not in a
+      person who can walk out the door.
+    </p>
+    <a href="https://calendly.com/ambrose-cheng-cpa/free-20-minute-discovery-call" target="_blank" rel="noopener" class="btn-primary">
+      📅 Book My Free 20-Min Workflow Diagnosis
+    </a>
+    <span class="hook-no-pitch hook-no-pitch--emphasis">
+      You provide one Trial Balance. We build everything else.
+    </span>
+    <span class="hook-no-pitch">
+      Not a sales call. You will receive: a hidden cost estimate + three immediately actionable improvements + a custom ROI projection for your firm.
+    </span>
     <div class="hook-pills">
-      <span class="pill pill--teal">💰 Recover Revenue</span>
-      <span class="pill pill--amber">👥 Survive Staff Turnover</span>
-      <span class="pill pill--coral">⏰ Reclaim 1,550 Hours</span>
+      <span class="pill pill--teal">💰 Recover 5–8 Dormant Clients Per Quarter</span>
+      <span class="pill pill--amber">👥 Staff Resignations No Longer Threaten Your Firm</span>
+      <span class="pill pill--coral">⏰ Reclaim 1,550 Hours of Repetitive Work Per Year</span>
     </div>
   </div>
 </section>
@@ -674,6 +712,17 @@ footer a{color:var(--gold);text-decoration:none}
   <div class="container">
     <p class="qualify-section__eyebrow">Before you read another word</p>
     <h2 class="qualify-section__title">Is This Your Firm?</h2>
+
+    <!-- Scene Immersion Block — Version A (Conservative) -->
+    <div class="qualify-scene">
+      <p class="qualify-scene__label">Sound familiar?</p>
+      <p class="qualify-scene__text">
+        It is 1 a.m. You are mapping a Trial Balance that your assistant
+        <em>should have handled three hours ago.</em>
+        You know it. But there is no one else.
+      </p>
+    </div>
+
     <div class="qualify-grid">
       <div class="qualify-card">
         <div class="qualify-card__check">✅</div>
