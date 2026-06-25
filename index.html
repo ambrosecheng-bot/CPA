@@ -77,11 +77,13 @@ img{max-width:100%;display:block}
 .ledger-head{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;
   font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#7e8aa3;
   padding-bottom:13px;border-bottom:1px solid var(--rule-dk);margin-bottom:6px}
-.led-row{display:flex;align-items:baseline;gap:.7rem;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07)}
-.led-row .lbl{color:#dfe4ee;font-size:.96rem}
-.led-row .lbl .k{display:block;font-size:.7rem;color:#8b95ab;font-family:"IBM Plex Mono",monospace;letter-spacing:.03em;margin-top:3px}
-.led-row .dots{flex:1;border-bottom:1px dotted #3c4a68;transform:translateY(-.25em);min-width:18px}
-.led-row .val{font-size:.96rem}
+.led-row{display:block;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.led-top{display:flex;align-items:baseline;gap:.6rem}
+.led-top .ttl{color:#fff;font-size:1.02rem;font-weight:600;font-family:"Inter","Noto Sans TC",sans-serif}
+.led-top .dots{flex:1;border-bottom:1px dotted #3c4a68;transform:translateY(-.25em);min-width:16px}
+.led-top .val{flex:none;font-size:.95rem;white-space:nowrap}
+.led-row .d{margin:8px 0 0;color:#aeb7c9;font-size:.9rem;line-height:1.55;max-width:66ch}
+.led-row .k{display:block;margin-top:8px;font-size:.64rem;color:#7e8aa3;font-family:"IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
 .led-total{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem;padding-top:18px;margin-top:6px}
 .led-total .lbl{font-family:"Fraunces","Noto Serif TC",serif;font-size:1.2rem;color:#fff;font-weight:600;white-space:nowrap;flex:none}
 .led-total .dots{display:none}
@@ -247,15 +249,34 @@ footer .disc{margin-top:24px;padding-top:20px;border-top:1px solid var(--rule-dk
     <div class="ledger rv">
       <div class="ledger-head"><span data-i18n="pb_col1">營運項目 / ITEM</span><span data-i18n="pb_col2">隱形成本 / COST</span></div>
 
-      <div class="led-row"><span class="lbl" data-i18n="pb_1">人手逐筆記帳，淹沒於 SME 入帳<span class="k">DATA-ENTRY BOTTLENECK</span></span><span class="dots"></span><span class="val neg">(每週 18 小時)</span></div>
-      <div class="led-row"><span class="lbl" data-i18n="pb_2">公司秘書文件重複起草<span class="k">COMPLIANCE OVERLOAD</span></span><span class="dots"></span><span class="val neg">(每週 9 小時)</span></div>
-      <div class="led-row"><span class="lbl" data-i18n="pb_3">審計／報稅前苦追客戶單據與月結單<span class="k">DOCUMENT CHASING</span></span><span class="dots"></span><span class="val neg">(每宗 +2 週)</span></div>
-      <div class="led-row"><span class="lbl" data-i18n="pb_4">客製提案動輒兩週，高意圖客戶轉投同行<span class="k">SLOW SALES CYCLE</span></span><span class="dots"></span><span class="val neg">(每月流失 1 客)</span></div>
-      <div class="led-row"><span class="lbl" data-i18n="pb_5">團隊忙於做事，無暇對外開發新客<span class="k">MARKETING PARALYSIS</span></span><span class="dots"></span><span class="val neg">(增長停滯)</span></div>
-      <div class="led-row"><span class="lbl" data-i18n="pb_6">AFRC 不合規罰款風險<span class="k">REGULATORY EXPOSURE</span></span><span class="dots"></span><span class="val neg">(HK$220,000)</span></div>
+      <div class="led-row">
+        <div class="led-top"><span class="ttl" data-i18n="pb1_t">人才短缺，初級職位最難填補</span><span class="dots"></span><span class="val neg" data-i18n="pb1_c">(逾 60% 受衝擊)</span></div>
+        <p class="d" data-i18n="pb1_d">逾六成執業會計師指人才短缺嚴重衝擊行業；出生率下降、年輕人重視工作與生活平衡，加上其他商業領域競爭，令招聘雪上加霜。</p>
+        <span class="k">TALENT SHORTAGE</span>
+      </div>
+      <div class="led-row">
+        <div class="led-top"><span class="ttl" data-i18n="pb2_t">工時過長，死線無情</span><span class="dots"></span><span class="val neg" data-i18n="pb2_c">(每週 +11 小時 無償)</span></div>
+        <p class="d" data-i18n="pb2_d">在長期人手不足與嚴格法定審計、申報死線雙重夾擊下，超過四分之三受訪者每週無償加班 11 小時或以上，過勞進一步推高離職潮。</p>
+        <span class="k">OVERTIME &amp; DEADLINES</span>
+      </div>
+      <div class="led-row">
+        <div class="led-top"><span class="ttl" data-i18n="pb3_t">逐底競爭，利潤受壓</span><span class="dots"></span><span class="val neg" data-i18n="pb3_c">(酬金 −47%)</span></div>
+        <p class="d" data-i18n="pb3_d">同行劈價搶佔市場，有調查指部分繼任核數師接受的酬金減幅介乎 3% 至 47%；人力成本與會計準則要求上升，收費卻難相應提高。</p>
+        <span class="k">RACE TO THE BOTTOM</span>
+      </div>
+      <div class="led-row">
+        <div class="led-top"><span class="ttl" data-i18n="pb4_t">監管與合規，日益繁重</span><span class="dots"></span><span class="val neg" data-i18n="pb4_c">(HK$220,000 罰款風險)</span></div>
+        <p class="d" data-i18n="pb4_d">AFRC 監管趨嚴、AML／CTF 法規實施，加上 HKFRS 與品質管理準則 HKSQM 1 不斷更新，迫使中小所投入大量時間建立內控、應付定期查察。</p>
+        <span class="k">COMPLIANCE BURDEN</span>
+      </div>
+      <div class="led-row">
+        <div class="led-top"><span class="ttl" data-i18n="pb5_t">數字化轉型難，系統落後</span><span class="dots"></span><span class="val neg" data-i18n="pb5_c">(人手 + 試算表)</span></div>
+        <p class="d" data-i18n="pb5_d">缺乏資源、欠缺兼通 IT 與會計的複合型人才，又抗拒改變；合規與入帳流程仍高度依賴人手操作與舊式試算表（Spreadsheets），效率低、易出錯、增違規風險。</p>
+        <span class="k">LEGACY SYSTEMS</span>
+      </div>
 
-      <div class="led-total"><span class="lbl" data-i18n="pb_total">全年合計</span><span class="dots" style="border-bottom-color:#4a597a"></span><span class="val neg" style="font-size:1.3rem">(1,400+ 小時 ＋ 罰款風險)</span></div>
-      <p class="led-foot" data-i18n="pb_foot">＊ 數字為一般中小型事務所的典型估算，供說明之用。</p>
+      <div class="led-total"><span class="lbl" data-i18n="pb_total">底線</span><span class="dots" style="border-bottom-color:#4a597a"></span><span class="val neg" data-i18n="pb_totalv" style="font-size:1.25rem">(事務所的可持續經營能力)</span></div>
+      <p class="led-foot" data-i18n="pb_foot">＊ 數據引自香港會計業界調查，反映行業普遍情況。</p>
     </div>
   </div>
 </section>
@@ -394,14 +415,24 @@ const EN = {
   pb_lead:"As a CPA, you know red parentheses mean a loss. Here is what your practice is absorbing right now —",
   pb_col1:"ITEM",
   pb_col2:"HIDDEN COST",
-  pb_1:'Manual line-by-line bookkeeping, buried in SME entries<span class="k">DATA-ENTRY BOTTLENECK</span>',
-  pb_2:'Re-drafting the same company-secretarial documents<span class="k">COMPLIANCE OVERLOAD</span>',
-  pb_3:'Chasing receipts &amp; bank statements before every audit / filing<span class="k">DOCUMENT CHASING</span>',
-  pb_4:'Custom proposals take two weeks; high-intent clients walk<span class="k">SLOW SALES CYCLE</span>',
-  pb_5:'Too buried in the work to ever market the firm<span class="k">MARKETING PARALYSIS</span>',
-  pb_6:'AFRC non-compliance penalty exposure<span class="k">REGULATORY EXPOSURE</span>',
-  pb_total:"Annual total",
-  pb_foot:"* Figures are typical estimates for a small practice, shown for illustration.",
+  pb1_t:'Talent shortage; junior roles hardest to fill',
+  pb1_d:'Over 60% of practising CPAs say the talent shortage is hitting the profession hard — falling birth rates, a younger generation prioritising work-life balance, and competition from other industries make hiring even harder.',
+  pb1_c:'(60%+ affected)',
+  pb2_t:'Long hours, relentless deadlines',
+  pb2_d:'Squeezed between chronic understaffing and hard statutory audit and filing deadlines, more than three-quarters of respondents work 11+ unpaid overtime hours a week — burnout fuelling still more turnover.',
+  pb2_c:'(+11 hrs/wk unpaid)',
+  pb3_t:'A race to the bottom on fees',
+  pb3_d:'Rivals slash prices to grab share — some successor auditors accept fee cuts of 3% to 47% — while rising labour costs and tougher standards leave no room to raise prices.',
+  pb3_c:'(fees −47%)',
+  pb4_t:'Mounting regulation &amp; compliance',
+  pb4_d:'Tighter AFRC oversight, AML/CTF rules, and constant updates to HKFRS and the HKSQM 1 quality standard force small firms to pour time into internal controls and recurring inspections.',
+  pb4_c:'(HK$220,000 penalty risk)',
+  pb5_t:'Stalled digital transformation',
+  pb5_d:'Short on resources and on hybrid IT-and-accounting talent, and resistant to change — compliance and bookkeeping still run on manual work and legacy spreadsheets: slow, error-prone, and riskier.',
+  pb5_c:'(manual + spreadsheets)',
+  pb_total:"The bottom line",
+  pb_totalv:"(your practice's long-term viability)",
+  pb_foot:"* Figures cited from Hong Kong accounting-profession surveys, reflecting industry-wide conditions.",
 
   sol_eb:"The solution",
   sol_h2:"You're not buying software. You're hiring a team of AI employees.",
